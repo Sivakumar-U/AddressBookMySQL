@@ -11,3 +11,9 @@ CREATE TABLE addressBook(
     PhoneNumber BIGINT(20) NOT NULL,
     Email VARCHAR(40) NOT NULL
 );
+DESCRIBE addressbook;
+
+INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) VALUES 
+('Siva','Upparapalli','Muchivolu','Tirupati','AndhraPradesh',517536,8965471230,'sivakumar@gmail.com'),
+('Mahesh','Petluru','Theertampadu','Nellore','AndhraPradesh',524135,7896541230,'mahi@gmail.com'),
+('Raja','Nagireddy','Kothuru','Nellore','AndhraPradesh',524138,9874563210,'raja@gmail.com');
