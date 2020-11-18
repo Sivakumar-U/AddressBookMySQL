@@ -19,5 +19,5 @@ INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Em
 ('RajaRamesh','Nagireddy','Kothuru','Nellore','AndhraPradesh',524138,9874563210,'raja@gmail.com');
 
 SELECT * FROM addressBook;
-
 ALTER TABLE addressBook MODIFY PhoneNumber VARCHAR(10);
+UPDATE addressBook SET State = 'Gudur' WHERE FirstName = 'Maheshwar';
