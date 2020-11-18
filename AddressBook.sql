@@ -8,12 +8,16 @@ CREATE TABLE addressBook(
     City VARCHAR(50) NOT NULL,
     State VARCHAR(50) NOT NULL,
     Zip BIGINT(20) NOT NULL,
-    PhoneNumber BIGINT(20) NOT NULL,
+    PhoneNumber VARCHAR(10) NOT NULL,
     Email VARCHAR(40) NOT NULL
 );
 DESCRIBE addressbook;
 
 INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) VALUES 
-('Siva','Upparapalli','Muchivolu','Tirupati','AndhraPradesh',517536,8965471230,'sivakumar@gmail.com'),
-('Mahesh','Petluru','Theertampadu','Nellore','AndhraPradesh',524135,7896541230,'mahi@gmail.com'),
-('Raja','Nagireddy','Kothuru','Nellore','AndhraPradesh',524138,9874563210,'raja@gmail.com');
+('Jyo','Upparapalli','Muchivolu','Tirupati','AndhraPradesh',517536,8965471230,'sivakumar@gmail.com'),
+('Maheshwar','Petluru','Theertampadu','Nellore','AndhraPradesh',524135,7896541230,'mahi@gmail.com'),
+('RajaRamesh','Nagireddy','Kothuru','Nellore','AndhraPradesh',524138,9874563210,'raja@gmail.com');
+
+SELECT * FROM addressBook;
+
+ALTER TABLE addressBook MODIFY PhoneNumber VARCHAR(10);
