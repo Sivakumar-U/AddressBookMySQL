@@ -29,5 +29,7 @@ SELECT COUNT(*) FROM addressBook WHERE State = 'AP';
 SELECT	* FROM addressBook WHERE City = 'Nellore' ORDER BY FirstName ASC;
 ALTER TABLE addressBook ADD Type VARCHAR(20) after LastName;
 UPDATE addressBook SET Type = 'Family' WHERE FirstName = 'Raja';
+UPDATE addressBook SET Type = 'Family' WHERE FirstName = 'Jyo';
 UPDATE addressBook SET Type = 'Friends' WHERE FirstName = 'RajaRamesh';
 UPDATE addressBook SET Type = 'Profession' WHERE FirstName = 'Mahesh';
+SELECT COUNT(*) FROM addressBook WHERE Type = 'Family'; 
