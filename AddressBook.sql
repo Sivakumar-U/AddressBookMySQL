@@ -24,3 +24,5 @@ UPDATE addressBook SET State = 'AP' WHERE FirstName = 'Maheshwar';
 DELETE FROM addressBook WHERE FirstName = 'Siva';
 SELECT * FROM addressBook WHERE City = 'Gudur';
 SELECT * FROM addressBook WHERE State = 'AndhraPradesh';
+SELECT COUNT(*) FROM addressBook WHERE City = 'Tirupati';
+SELECT COUNT(*) FROM addressBook WHERE State = 'AP';
