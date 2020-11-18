@@ -66,3 +66,9 @@ INSERT INTO Friend(FirstName, LastName, Address, City, State, Zip, PhoneNumber, 
     ('Vamsi', 'Oruganti', 'Muchivolu', 'Vijayawada', 'AP', '512741', '8521479635', 'vamsi@gmail.com'),
     ('Prudhvi', 'Dandi', 'Sr Nagar', 'Hyderabad', 'TS', '510006', '9874565213', 'prudhvi@gmail.com');
 SELECT * FROM Friend;
+SELECT * FROM Friend WHERE City = 'Vijayawada';
+SELECT * FROM Family WHERE State = 'AP';
+SELECT COUNT(*) FROM Friend WHERE City = 'Hyderabad';
+SELECT	* FROM Family WHERE City = 'Tirupati' ORDER BY FirstName ASC;
+SELECT COUNT(*) FROM addressBook WHERE Type = 'Family';
+
