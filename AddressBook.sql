@@ -26,3 +26,4 @@ SELECT * FROM addressBook WHERE City = 'Gudur';
 SELECT * FROM addressBook WHERE State = 'AndhraPradesh';
 SELECT COUNT(*) FROM addressBook WHERE City = 'Tirupati';
 SELECT COUNT(*) FROM addressBook WHERE State = 'AP';
+SELECT	* FROM addressBook WHERE City = 'Nellore' ORDER BY FirstName ASC;
