@@ -33,3 +33,36 @@ UPDATE addressBook SET Type = 'Family' WHERE FirstName = 'Jyo';
 UPDATE addressBook SET Type = 'Friends' WHERE FirstName = 'RajaRamesh';
 UPDATE addressBook SET Type = 'Profession' WHERE FirstName = 'Mahesh';
 SELECT COUNT(*) FROM addressBook WHERE Type = 'Family'; 
+SELECT Type, count(FirstName) FROM addressbook GROUP BY Type;
+
+ CREATE TABLE Friend(
+   FirstName VARCHAR(15) NOT NULL PRIMARY KEY,
+    LastName VARCHAR(15) NOT NULL,
+    Address VARCHAR(20) NOT NULL,
+    City VARCHAR(15) NOT NULL,
+    State VARCHAR(15) NOT NULL,
+    Zip VARCHAR(10) NOT NULL,
+    PhoneNumber VARCHAR(10) NOT NULL,
+    Email VARCHAR(30) NOT NULL
+);
+ALTER TABLE Friend MODIFY Zip VARCHAR(10);
+SHOW TABLES;
+CREATE TABLE Family(
+  FirstName VARCHAR(15) NOT NULL PRIMARY KEY,
+    LastName VARCHAR(15) NOT NULL,
+    Address VARCHAR(20) NOT NULL,
+    City VARCHAR(15) NOT NULL,
+    State VARCHAR(15) NOT NULL,
+    Zip VARCHAR(10) NOT NULL,
+    PhoneNumber VARCHAR(10) NOT NULL,
+    Email VARCHAR(30) NOT NULL
+);
+
+INSERT INTO Family(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES
+    ('JyoShi', 'Upparapalli', 'Muchivolu', 'Tirupati', 'AP', '517536', '9177255890', 'jyoshi@gmail.com'),
+    ('Kishore', 'Bandi', 'MR Palli','Tirupati', 'AP', '517544', '7896541230', 'kishore@gmail.com');	
+    
+INSERT INTO Friend(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES
+    ('Vamsi', 'Oruganti', 'Muchivolu', 'Vijayawada', 'AP', '512741', '8521479635', 'vamsi@gmail.com'),
+    ('Prudhvi', 'Dandi', 'Sr Nagar', 'Hyderabad', 'TS', '510006', '9874565213', 'prudhvi@gmail.com');
+SELECT * FROM Friend;
