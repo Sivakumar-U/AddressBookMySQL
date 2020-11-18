@@ -20,5 +20,7 @@ INSERT INTO addressBook(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Em
 
 SELECT * FROM addressBook;
 ALTER TABLE addressBook MODIFY PhoneNumber VARCHAR(10);
-UPDATE addressBook SET State = 'Gudur' WHERE FirstName = 'Maheshwar';
+UPDATE addressBook SET State = 'AP' WHERE FirstName = 'Maheshwar';
 DELETE FROM addressBook WHERE FirstName = 'Siva';
+SELECT * FROM addressBook WHERE City = 'Gudur';
+SELECT * FROM addressBook WHERE State = 'AndhraPradesh';
